@@ -1,4 +1,5 @@
 # Lv2 patches
+Lv2 is the CellOS/GameOS BSD-derived kernel
 ## Remove unnecessary ethernet dependency for the deci3 server
 `0x284218` with instructions: `60000007`  
 `0x284118` with instructions: `48000030`   
