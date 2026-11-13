@@ -5,6 +5,8 @@
 
 Afterwards, you can toggle the internet connection to send a new event. Event 2 will first fire, shutting the server off. When turning the link back on, event 1 fires, which now turns on the server instead of being reliant on event 4 (ethernet link is connected) to turn on bit 3 (0x4 = 0b100) in the `state` word in the old `or` (`state |= 4`) instruction.
 
+Server always listens to every interface `0.0.0.0` anyways on port 1000 and the dependency is 100% unnecessary and prevents a wifi-only connected PS3 from enabling the DECI3 server.
+
 <br>
 <br>
 
